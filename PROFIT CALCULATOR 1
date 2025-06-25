@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int copy=sc.nextInt();
+        int percopy=sc.nextInt();
+        int  spent=sc.nextInt();
+        int value=copy*percopy;
+        int spentvalue=(copy*spent)+100;
+        float ic=value-spentvalue;
+        System.out.printf("Number of copies sold:%d\n",copy);
+        System.out.printf("Cost of each copy:%d\n",percopy);
+        System.out.printf("Cost spent by agency on each newspaper:%d\n",spent);
+        System.out.printf("The profit obtained is Rs.%.02f",ic);      
+    }
+}
