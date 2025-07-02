@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+        Main obj = new Main();
+        if (N >= 1 && N <= 9) {
+            int result = obj.square(N);
+            System.out.println("Square of " + N + " is " + result);
+        } else {
+            System.out.println("Invalid Input");
+        }
+    }
+
+    public int square(int number) {
+        return number * number;
+    }
+}
